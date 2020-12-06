@@ -1,0 +1,6 @@
+#! /bin/sh
+
+picom &
+setxkbmap it &
+nitrogen --restore &
+/home/sach1/Scripts/fix-delay.sh &
