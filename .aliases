@@ -1,0 +1,43 @@
+# alias x=''
+
+# General utilities to make my life easier
+alias c='clear'
+alias vim='nvim'
+alias _='sudo'
+alias please='sudo'
+alias mkdir='mkdir -pv'
+alias ping='ping -c 5'
+alias yst="yarn run start"
+
+# Replacing ls to exa
+alias ls='exa -la --color=always --group-directories-first'
+alias ll='exa -a --color=always --group-directories-first'
+alias lt='exa -aT --color=always --group-directories-first'
+
+# Flags
+alias df='df -h'
+# alias free='free -m'
+alias wget='wget -c'
+
+# Security
+alias rm='rm -I --preserve-root'
+alias cp='cp -L'
+alias chown='chown --preserve-root'
+alias chmod='chmod --preserve-root'
+alias chgrp='chgrp --preserve-root'
+
+# Grepp
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# Random shit
+alias f="echo 'sach1 paid his respects to$($1)'"
+
+cleanup() {
+        sudo pacman -Scc
+        sudo pacman -Rns $(pacman -Qtdq)
+        sudo rm -rf ~/.cache/*
+        sudo journalctl --vacuum-size=50M
+}
+alias config='/usr/bin/git --git-dir=/home/sach1/.cfg/ --work-tree=/home/sach1'
