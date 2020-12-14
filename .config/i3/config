@@ -143,11 +143,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-client.focused              #1F1F29 #1F1F29 #1F1F29 #1F1F29 #1F1F29
-client.focused_inactive     #1F1F29 #1F1F29 #1F1F29 #1F1F29 #1F1F29
-client.unfocused            #1F1F29 #1F1F29 #1F1F29 #1F1F29 #1F1F29
-client.urgent               #2f343f #2f343f #1F1F29 #2f343f #2f343f
-client.placeholder          #2f343f #2f343f #1F1F29 #2f343f #2f343f
+client.focused              #EABBB9 #EABBB9 #EABBB9 #EABBB9 #EABBB9
+client.focused_inactive     #EABBB9 #EABBB9 #EABBB9 #EABBB9 #EABBB9
+client.unfocused            #EABBB9 #EABBB9 #EABBB9 #EABBB9 #EABBB9
+client.urgent               #2f343f #2f343f #EABBB9 #2f343f #2f343f
+client.placeholder          #2f343f #2f343f #EABBB9 #2f343f #2f343f
 client.background           #2f343f
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
